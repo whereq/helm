@@ -1,3 +1,4 @@
+# helm repo
 ```
 helm repo add bitnami https://charts.bitnami.com/bitnami
 ```
@@ -23,6 +24,7 @@ $ helm search repo nginx-ingress --version ^1.0.0
 helm repo update
 ```
 
+# helm show
 ```
 helm show chart bitnami/mysql
 ```
@@ -30,7 +32,7 @@ helm show chart bitnami/mysql
 ```
 helm show all bitnami/mysql
 ```
-
+# helm install/uninstall
 Install a release and give a name
 ```
 helm install [NAME] [CHART] [flags]
@@ -48,6 +50,13 @@ Unstall a release
 helm unstall [NAME]
 ```
 
+# helm lint
+examine a chart for possible issues
+```
+helm lint PATH [flags]
+```
+
+# helm status
 Check release status
 ```
 helm status [NAME]
