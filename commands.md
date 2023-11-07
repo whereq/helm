@@ -50,6 +50,12 @@ Unstall a release
 helm unstall [NAME]
 ```
 
+# helm create
+create a new chart with the given name
+```
+helm create NAME [flags]
+```
+
 # helm lint
 examine a chart for possible issues
 ```
