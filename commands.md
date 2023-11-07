@@ -24,10 +24,6 @@ helm repo update
 ```
 
 ```
-helm install bitnami/mysql --generate-name
-```
-
-```
 helm show chart bitnami/mysql
 ```
 
@@ -38,6 +34,13 @@ helm show all bitnami/mysql
 Install a release and give a name
 ```
 helm install [NAME] [CHART] [flags]
+```
+
+```
+helm install bitnami/mysql --generate-name
+
+# Install bitnami/nginx with name mynginx
+helm install mynginx bitnami/nginx
 ```
 
 Unstall a release
